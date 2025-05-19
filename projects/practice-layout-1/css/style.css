@@ -240,7 +240,7 @@ img{
 /* =====|| ratings-CSS-START ||===== */
 .dotted-img{
     /* border: 1px solid red; */
-    background: url("../Images/dotted-1.png");
+    background: url("../images/dotted-1.png");
     /* background-position: center; */
     background-size: contain;
     background-repeat: repeat;
