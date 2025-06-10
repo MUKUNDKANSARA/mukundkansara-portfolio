@@ -185,6 +185,17 @@ li:last-child{
     border-radius: 4px;
     padding: 1.5rem
 }
+.skill-card:hover,
+.profile-card:hover,
+.about-content:hover,
+.service-card:hover,
+.experience:hover,
+.education:hover,
+.contact-list:hover,
+.contact-form:hover {
+  border-color: var(--text-title);
+  cursor: pointer;
+}
 .profile-img{
     background: url("../images/my-photo.jpeg") no-repeat center center/cover;
     width: 250px;
@@ -341,6 +352,9 @@ li:last-child{
     font-size: 1.25rem;
     font-weight: 500;
     letter-spacing: 2px;
+}
+.border-none {
+  border-bottom: 0;
 }
 /* ====//resume-css-end//=====  */
 /* ====//portfolio-css//=====  */
@@ -558,6 +572,9 @@ footer{
         width: 100%;
        }
          /* ====//contact-section-end//=====  */
+    .border-none {
+          border-bottom: 0;
+    }    
 }
 /* ====//meadia query for small device//=====  */
 @media (max-width:576px) {
@@ -657,6 +674,9 @@ footer{
     /* ====//resume-css//=====  */
     .experience-content h4{
         font-size: 1.5rem;
+    }
+    .border-none {
+      border-bottom: 0;
     }
     /* ====//resume-css//=====  */
    /* ====//contact-section//=====  */
