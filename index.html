@@ -8,18 +8,19 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
-    <link rel="shortcut icon" href="favicon/favicon.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css" />
-    <link
+    <!-- <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+  /> -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
     <!-- ====//header-start//=====  -->
     <section id="showcase">
       <header id="header">
-        <div class="container header animate__animated animate__slideInDown">
+        <div class="container header" data-aos="fade-down">
           <div class="logo">
             <a href="#home"><img src="images/logo.svg" alt="logo" /></a>
           </div>
@@ -47,7 +48,7 @@
       <!-- ====//showcase-section-start//=====  -->
       <section class="showcase">
         <div class="container showcase-flex-box">
-          <div class="showcase-content animate__animated animate__zoomIn">
+          <div class="showcase-content" data-aos="zoom-in" data-aos-duration="2000">
             <h1>Hi, I am <span>mukund kansara</span></h1>
             <p class="body-text">
               Web & UI/UX Designer crafting seamless, user-first digital
@@ -68,24 +69,30 @@
     <!-- ====//about-section//=====  -->
     <section id="about">
       <div class="container">
-        <div class="section-heading">
+        <div class="section-heading" data-aos="zoom-in" data-aos-duration="2000">
           <h4>ab<span>out</span>me</h4>
         </div>
         <div class="about-section">
-          <div class="profile-card">
+          <div class="profile-card" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
             <div class="profile-img"></div>
-            <div class="profile-content">
+            <div class="profile-content" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
               <h2>Mukund Kansara</h2>
               <p>I am a Web Designer & UI/UX Designer based in Vadodara.</p>
             </div>
-            <div class="showcase-sm-icon">
+            <div class="showcase-sm-icon" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
               <a href="https://www.linkedin.com/in/mukund98/" target="_blank"><i class="bi bi-linkedin"></i></a>
               <a href="https://www.behance.net/mukundkansara" target="_blank"><i class="bi bi-behance"></i></a>
               <a href="https://github.com/MUKUNDKANSARA" target="_blank"><i class="bi bi-github"></i></a>
               <a href="https://www.instagram.com/m_k_kansara9/" target="_blank"><i class="bi bi-instagram"></i></a>
             </div>
           </div>
-          <div class="about-content">
+          <div class="about-content" data-aos="fade-left"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
             <span class="about-content-sub-title">hi there</span>
             <h3>I am Mukund Kansara</h3>
             <p>
@@ -111,32 +118,44 @@
     <!-- ====//service-section-//=====  -->
     <section id="sevices">
       <div class="container">
-        <div class="section-heading">
+        <div class="section-heading" data-aos="zoom-in" data-aos-duration="2000">
           <h4>se<span>rvic</span>es</h4>
         </div>
         <div class="services">
-          <div class="service-card">
+          <div class="service-card" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
             <img src="images/web-design.svg" alt="web-design" />
-            <h3>Web Design</h3>
-            <p>
+            <h3 data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom" data-aos-duration="2000">Web Design</h3>
+            <p data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
               I specialize in converting PSD and Figma designs into clean,
               responsive, HTML code, ensuring pixel-perfect accuracy and
               seamless user experience.
             </p>
           </div>
-          <div class="service-card">
+          <div class="service-card" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
             <img src="images/ux-design.svg" alt="ui/ux-design" />
-            <h3>UI/UX Designe</h3>
-            <p>
+            <h3 data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom" data-aos-duration="2000">UI/UX Designe</h3>
+            <p data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
               As a UI/UX designer, I craft intuitive user interfaces and
               detailed wireframes that align with user needs and business goals,
               ensuring a seamless and engaging digital experience.
             </p>
           </div>
-          <div class="service-card">
+          <div class="service-card" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
             <img src="images/3.svg" alt="mobile-app-design" />
-            <h3>Mobile App Design</h3>
-            <p>
+            <h3 data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom" data-aos-duration="2000">Mobile App Design</h3>
+            <p data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
               As a web and UI/UX designer, I create intuitive mobile app and
               user interface designs that adhere to core UI principles, ensuring
               both visual appeal and functional clarity.
@@ -149,65 +168,66 @@
     <!-- ====//skill-section//=====  -->
     <section id="skills">
       <div class="container">
-        <div class="section-heading">
+        <div class="section-heading" data-aos="zoom-in" data-aos-duration="2000">
           <h4>Let’s <span>Explore My </span> Skills</h4>
         </div>
         <div class="skill-card-container">
-          <div class="skill-card">
+          <div class="skill-card" data-aos="zoom-in-down" data-aos-duration="1000">
             <div class="skill-card-img">
               <img src="images/figma.png" alt="figma" />
             </div>
             <h4>Figma</h4>
             <span class="comman-btn skill-btn skill-btn-sm-device">80%</span>
           </div>
-          <div class="skill-card">
+          <div class="skill-card" data-aos="zoom-in-down" data-aos-duration="1000">
             <div class="skill-card-img">
               <img src="images/html.png" alt="html" />
             </div>
             <h4>HTML</h4>
             <span class="comman-btn skill-btn skill-btn-sm-device">90%</span>
           </div>
-          <div class="skill-card">
+          <div class="skill-card" data-aos="zoom-in-down" data-aos-duration="1000">
             <div class="skill-card-img">
               <img src="images/css-3.png" alt="css" />
             </div>
             <h4>CSS</h4>
             <span class="comman-btn skill-btn skill-btn-sm-device">90%</span>
           </div>
-          <div class="skill-card">
+          <div class="skill-card" data-aos="zoom-in-down" data-aos-duration="1000">
             <div class="skill-card-img">
               <img src="images/bootstrap.png" alt="bootstrap" />
             </div>
             <h4>Bootstrap</h4>
             <span class="comman-btn skill-btn skill-btn-sm-device">70%</span>
           </div>
-          <div class="skill-card">
+          <div class="skill-card" data-aos="zoom-in-down" data-aos-duration="1000">
             <div class="skill-card-img">
               <img src="images/jquery.png" alt="javascript" />
             </div>
             <h4>jQuery</h4>
             <span class="comman-btn skill-btn skill-btn-sm-device">20%</span>
           </div>
-          <div class="skill-card">
+          <div class="skill-card" data-aos="zoom-in-down" data-aos-duration="1000">
             <div class="skill-card-img">
               <img src="images/photoshop.png" alt="photoshop" />
             </div>
             <h4>Photoshop</h4>
             <span class="comman-btn skill-btn skill-btn-sm-device">50%</span>
           </div>
-          <div class="skill-card">
+          <div class="skill-card" data-aos="zoom-in-down" data-aos-duration="1000">
             <div class="skill-card-img">
               <img src="images/illustrator.png" alt="illustrator" />
             </div>
             <h4>Illustrator</h4>
             <span class="comman-btn skill-btn skill-btn-sm-device">50%</span>
           </div>
-          <div class="skill-card">
+          <div class="skill-card" data-aos="zoom-in-down" data-aos-duration="1000">
             <div class="skill-card-img">
               <img src="images/wordpress.png" alt="comming-soon" />
             </div>
             <h4>Wordpress</h4>
-            <span class="comman-btn skill-btn skill-btn-sm-device">50%</spa
+            <span class="comman-btn skill-btn skill-btn-sm-device">50%</span>
+            <!-- <span class="comman-btn coming-soon-btn">50%</span> -->
           </div>
         </div>
       </div>
@@ -216,11 +236,11 @@
     <!-- ====//resume-section//=====  -->
     <section id="resume">
       <div class="container">
-        <div class="section-heading">
+        <div class="section-heading" data-aos="zoom-in" data-aos-duration="2000">
           <h4>Re<span>sum</span>e</h4>
         </div>
         <div class="resume-content">
-          <div class="experience">
+          <div class="experience" data-aos="fade-right" data-aos-duration="2000">
             <i class="bi bi-briefcase experience-icon"></i
             ><span class="experience-heading">Experience</span>
             <div class="experience-list">
@@ -229,7 +249,7 @@
                 <div class="experience-content">
                   <span>Feb 2024 - Aug 2024</span>
                   <h4>Jr. UI/UX Designer</h4>
-                  <span>Atyantik Technologies Pvt. Ltd.</span>
+                  <span>UI/UX and Web Design</span>
                 </div>
               </div>
               <div class="experience-item border-none">
@@ -242,7 +262,7 @@
               </div>
             </div>
           </div>
-          <div class="education">
+          <div class="education" data-aos="fade-left" data-aos-duration="2000">
             <i class="bi bi-mortarboard education-icon"></i
             ><span class="education-heading">Education</span>
             <div class="experience-list">
@@ -271,11 +291,11 @@
     <!-- ====//portfolio-section//=====  -->
     <section id="portfolio">
       <div class="container">
-        <div class="section-heading">
+        <div class="section-heading" data-aos="zoom-in" data-aos-duration="2000">
           <h4>por<span>tfol</span>io</h4>
         </div>
         <div class="portfolio-card-container">
-          <div class="portfolio-card">
+          <div class="portfolio-card" data-aos="zoom-in-up" data-aos-duration="1000">
             <a href="projects/practice-layout-2/index.html" target="_blank" class="portfolio-card-explore-btn"><i class="bi bi-arrow-up-right-square-fill"></i></a>
             <img src="images/accounting.png" alt="website-ui-design" />
             <div class="portfolio-content">
@@ -283,7 +303,7 @@
               <h4>PSD File to HTML coding.</h4>
             </div>
           </div>
-          <div class="portfolio-card">
+          <div class="portfolio-card" data-aos="zoom-in-up" data-aos-duration="1000">
             <a href="projects/microsoft-clone/index.html" target="_blank" class="portfolio-card-explore-btn"><i class="bi bi-arrow-up-right-square-fill"></i></a>
             <img src="images/Microsoft-clone.png" alt="website-ui-design" />
             <div class="portfolio-content">
@@ -291,7 +311,7 @@
               <h4>Microsoft clone with responsive.</h4>
             </div>
           </div>
-          <div class="portfolio-card">
+          <div class="portfolio-card" data-aos="zoom-in-up" data-aos-duration="1000">
             <a href="projects/practice-layout-1/index.html" target="_blank" class="portfolio-card-explore-btn"><i class="bi bi-arrow-up-right-square-fill"></i></a>
             <img src="images/weltec.png" alt="website-ui-design" />
             <div class="portfolio-content">
@@ -315,23 +335,7 @@
               <h4>Figma File to HTML coding.</h4>
             </div>
           </div> -->
-          <div class="portfolio-card">
-            <a href="https://www.behance.net/gallery/227094763/E-Commerce-Landing-Page-UI-Design" target="_blank" class="portfolio-card-explore-btn"><i class="bi bi-arrow-up-right-square-fill"></i></a>
-            <img src="images/e-commerce-landingpage-ui.png" alt="landingpage-ui-design" />
-            <div class="portfolio-content">
-              <span>UI/UX Design</span>
-              <h4>E-commerce Landing page UI Design.</h4>
-            </div>
-          </div>
-           <div class="portfolio-card">
-            <a href="https://www.behance.net/gallery/227159579/Redesign-Ran-Utsav-Landing-page" target="_blank" class="portfolio-card-explore-btn"><i class="bi bi-arrow-up-right-square-fill"></i></a>
-            <img src="images/ran-utsav-landingpage-ui.png" alt="landingpage-ui-design" />
-            <div class="portfolio-content">
-              <span>UI/UX Design</span>
-              <h4>Redesign Landing page UI Design.</h4>
-            </div>
-          </div>
-          <div class="portfolio-card">
+          <div class="portfolio-card" data-aos="zoom-in-up" data-aos-duration="1000">
             <a href="https://www.behance.net/gallery/196491571/food-website-ui-design" target="_blank" class="portfolio-card-explore-btn"><i class="bi bi-arrow-up-right-square-fill"></i></a>
             <img src="images/food-website.png" alt="website-ui-design" />
             <div class="portfolio-content">
@@ -339,7 +343,7 @@
               <h4>Food Website UI Design.</h4>
             </div>
           </div>
-          <div class="portfolio-card">
+          <div class="portfolio-card" data-aos="zoom-in-up" data-aos-duration="1000">
             <a href="https://www.behance.net/gallery/190329961/Education-Mobile-UI" target="_blank" class="portfolio-card-explore-btn"><i class="bi bi-arrow-up-right-square-fill"></i></a>
             <img src="images/education-app-ui.png" alt="website-ui-design" />
             <div class="portfolio-content">
@@ -347,7 +351,7 @@
               <h4>Education App UI Design.</h4>
             </div>
           </div>
-          <div class="portfolio-card">
+          <div class="portfolio-card" data-aos="zoom-in-up" data-aos-duration="1000">
             <a href="https://www.behance.net/gallery/196059741/App-UI-Design" target="_blank" class="portfolio-card-explore-btn"><i class="bi bi-arrow-up-right-square-fill"></i></a>
             <img src="images/furniture-app-ui.png" alt="website-ui-design" />
             <div class="portfolio-content">
@@ -355,12 +359,28 @@
               <h4>Product App UI Design.</h4>
             </div>
           </div>
-          <div class="portfolio-card">
+          <div class="portfolio-card" data-aos="zoom-in-up" data-aos-duration="1000">
             <a href="https://www.behance.net/gallery/217379833/Splash-screen-UI-Redesign" target="_blank" class="portfolio-card-explore-btn"><i class="bi bi-arrow-up-right-square-fill"></i></a>
             <img src="images/redesign-app-ui.png" alt="website-ui-design" />
             <div class="portfolio-content">
               <span>UI/UX Design</span>
               <h4>Splash Screen Redesign App UI Design.</h4>
+            </div>
+          </div>
+          <div class="portfolio-card" data-aos="zoom-in-up" data-aos-duration="1000">
+            <a href="https://www.behance.net/gallery/227094763/E-Commerce-Landing-Page-UI-Design" target="_blank" class="portfolio-card-explore-btn"><i class="bi bi-arrow-up-right-square-fill"></i></a>
+            <img src="images/e-commerce-landingpage-ui.png" alt="landingpage-ui-design" />
+            <div class="portfolio-content">
+              <span>UI/UX Design</span>
+              <h4>E-commerce Landing page UI Design.</h4>
+            </div>
+          </div>
+          <div class="portfolio-card" data-aos="zoom-in-up" data-aos-duration="1000">
+            <a href="https://www.behance.net/gallery/227159579/Redesign-Ran-Utsav-Landing-page" target="_blank" class="portfolio-card-explore-btn"><i class="bi bi-arrow-up-right-square-fill"></i></a>
+            <img src="images/ran-utsav-landingpage-ui.png" alt="landingpage-ui-design" />
+            <div class="portfolio-content">
+              <span>UI/UX Design</span>
+              <h4>Redesign Landing page UI Design.</h4>
             </div>
           </div>
         </div>
@@ -370,11 +390,13 @@
     <!-- ====//contact-section//=====  -->
      <section id="contact">
       <div class="container">
-        <div class="section-heading">
+        <div class="section-heading" data-aos="zoom-in" data-aos-duration="2000">
           <h4>Get in <span> Touch with</span> Me!</h4>
         </div>
-        <div class="contact-section">
-          <div class="contact-list">
+        <div class="contact-section" >
+          <div class="contact-list" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
             <div class="contact-list-item">
               <i class="bi bi-geo-alt"></i>
               <div class="contact-list-item-content">
@@ -397,8 +419,25 @@
               </div>
             </div>
           </div>
-          <div class="contact-form">
-            <form action="#">
+          <div class="contact-form" data-aos="fade-left"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
+     <form action="https://formsubmit.co/kansara.mk64@gmail.com" method="POST">
+  <div class="contact-form-name">
+    <input type="text" name="name" placeholder="Name" required>
+    <input type="email" name="email" placeholder="Email" required>
+  </div>
+  <input type="text" name="subject" placeholder="Subject" required>
+  <textarea name="message" placeholder="Message" rows="4" cols="10" required></textarea>
+
+  <!-- Submit button as actual <button> -->
+  <button type="submit" class="comman-btn submit-btn">Send me message</button>
+
+  <!-- Optional: Prevent FormSubmit from showing their default page -->
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_template" value="table">
+</form>
+            <!-- <form action="#">
               <div class="contact-form-name">
                 <input type="text" placeholder="Name">
                 <input type="email" placeholder="Email">
@@ -406,7 +445,7 @@
               <input type="text" placeholder="subject">
               <textarea placeholder="message" rows="4" cols="10"></textarea>
               <a href="mailto:kansara.mk64@gmail.com" class="comman-btn submit-btn">send me message</a>
-            </form>
+            </form> -->
           </div>
         </div>
       </div>
@@ -416,26 +455,59 @@
       
        <section id="live-location">
         <div class="container">
-          <div class="section-heading">
+          <div class="section-heading" data-aos="zoom-in" data-aos-duration="2000">
           <h4>lo<span>cati</span>on</h4>
         </div>
         <div class="location-container">
-          <div class="location-content">
+          <div class="location-content" data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
           <div class="location-heading">
-          <h4>Current location</h4>
+          <h4 data-aos="zoom-in" data-aos-duration="2000">Current location</h4>
           </div>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3690.698832813172!2d73.21095907529343!3d22.327226979667223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fcf1311642f25%3A0xc4435f0e1eb6585c!2sAmit%20Nagar%20Circle!5e0!3m2!1sen!2sin!4v1746621093236!5m2!1sen!2sin" width="100%" height="450" style="border:1px solid #3f4551; border-radius: 4px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3690.698832813172!2d73.21095907529343!3d22.327226979667223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fcf1311642f25%3A0xc4435f0e1eb6585c!2sAmit%20Nagar%20Circle!5e0!3m2!1sen!2sin!4v1746621093236!5m2!1sen!2sin" width="100%" height="450" style="border:1px solid #3f4551; border-radius:  var(--border-radius);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-        <div class="location-content">
+        <div class="location-content" data-aos="fade-left"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
           <div class="location-heading">
-          <h4>Permanent location</h4>
+          <h4 data-aos="zoom-in" data-aos-duration="2000">Permanent location</h4>
           </div>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d3692.332054505966!2d70.7836783!3d22.2654081!3m2!1i1024!2i768!4f13.1!2m1!1smavdi%20chowk%20rajkot!5e0!3m2!1sen!2sin!4v1747046782318!5m2!1sen!2sin" width="100%" height="450" style="border:1px solid #3f4551; border-radius: 4px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d3692.332054505966!2d70.7836783!3d22.2654081!3m2!1i1024!2i768!4f13.1!2m1!1smavdi%20chowk%20rajkot!5e0!3m2!1sen!2sin!4v1747046782318!5m2!1sen!2sin" width="100%" height="450" style="border:1px solid #3f4551; border-radius:  var(--border-radius);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         </div>
        </section>
        <footer id="footer">
           <span>Copyright &copy; 2025 code by <span class="high-light">M.K.KANSARA</span> | All Rights Reserved.</span>
        </footer>
+      <script>
+ window.addEventListener("load", function () {
+    const loader = document.getElementById("loader");
+    setTimeout(() => {
+      loader.style.opacity = "0";
+      setTimeout(() => {
+        loader.style.display = "none";
+      }, 300); // match transition time
+    }, 4000); // delay fade-out for 1.5s after load
+  });
+</script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
   </body>
+   <!-- Loader Container -->
+<div id="loader">
+  <div class="loader-content">
+    <img src="favicon/apple-touch-icon.png" alt="MK Logo">
+    <p class="loader-text">Just a moment, good design takes time.</p>
+  </div>
+</div>
+  
+  <!-- <script src="js/jquery.js"></script>
+  <script>
+    // $(document).ready(function(){
+    //   alert("Hi There, Welcome to My Portfolio.")
+    // });
+  </script> -->
 </html>
