@@ -88,7 +88,7 @@ img {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: #ffffff;
+  background-color: #1016242f;
   backdrop-filter: blur(6px); /* Optional: blurred background */
   z-index: 9999;
   display: flex;
@@ -108,16 +108,16 @@ img {
 
 /* Logo Styling */
 .loader-content img {
-  width: 80px;
+  width: 150px;
   height: auto;
   animation: spin 3s linear infinite;
 }
 
 .loader-text {
   font-size: 1rem;
-  color: #333;
+  color: var(--primary-color);
+  font-family: "Jost", sans-serif;
   margin-top: 1rem;
-  font-family: 'Segoe UI', sans-serif;
   width: 100%;
   white-space: nowrap;
   overflow: hidden;
@@ -658,7 +658,7 @@ footer {
     margin: 0 auto;
   }
    .loader-content img {
-    width: 60px; /* Smaller logo for phones */
+    width: 100px; /* Smaller logo for phones */
   }
   /* ====//header-css//=====  */
   .header {
@@ -796,7 +796,7 @@ footer {
   }
 }
 /* Dark Mode Support */
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   #loader {
     background-color: #3f4a636e;
   }
@@ -805,4 +805,4 @@ footer {
     color: var(--primary-color);
     font-family: "Jost", sans-serif;
   }
-}
+} */
